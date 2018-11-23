@@ -4,7 +4,7 @@
 #
 Name     : perl-Data-Validate-IP
 Version  : 0.27
-Release  : 3
+Release  : 4
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Data-Validate-IP-0.27.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Data-Validate-IP-0.27.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libd/libdata-validate-ip-perl/libdata-validate-ip-perl_0.27-1.debian.tar.xz
