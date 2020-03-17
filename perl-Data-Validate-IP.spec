@@ -4,7 +4,7 @@
 #
 Name     : perl-Data-Validate-IP
 Version  : 0.27
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Data-Validate-IP-0.27.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Data-Validate-IP-0.27.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libd/libdata-validate-ip-perl/libdata-validate-ip-perl_0.27-1.debian.tar.xz
@@ -82,7 +82,7 @@ make TEST_VERBOSE=1 test
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Data-Validate-IP
 cp %{_builddir}/Data-Validate-IP-0.27/LICENSE %{buildroot}/usr/share/package-licenses/perl-Data-Validate-IP/0ad22dbd4ef1c95a803603a7cad8cb99efdde001
-cp %{_builddir}/Data-Validate-IP-0.27/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Data-Validate-IP/9f18915626be2c95f0505e40c51cae2f0cadb46e
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Data-Validate-IP/9f18915626be2c95f0505e40c51cae2f0cadb46e
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -107,4 +107,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Data/Validate/IP.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Data/Validate/IP.pm
